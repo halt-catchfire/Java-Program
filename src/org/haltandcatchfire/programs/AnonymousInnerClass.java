@@ -11,14 +11,15 @@ public class AnonymousInnerClass {
 
 	public static void main(String args[])
 	{
-	Popcorn p=new Popcorn()
+		
+	 new Popcorn()
 			{
 		public void taste()
 		{
 		System.out.println("spicy");
 		}
-		};
-		p.taste();
-		System.out.println(p.getClass().getName());
+		}.taste();
+		
+	//	System.out.println(p.getClass().getName());
 			}
 }
